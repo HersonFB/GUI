@@ -1,0 +1,120 @@
+body{
+  background-image: url(fondo.jpg);
+}
+
+  .titulo{
+  z-index: 1;
+  background-color: black;
+  font-size: 3vw;
+  color: white;
+  text-align: center;
+  margin:0;
+  padding: 2%;
+  animation-name: example;
+  animation-duration: 5s;    
+  }
+
+
+  @keyframes example {
+  from {background-color: red;}
+  to {background-color: black;}
+  }  
+
+#logo{
+  width: 32px;
+  height: 32px;
+}
+.grid{
+  margin-top: 4vh;
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  gap: 1em;
+}  
+
+
+.grid div{
+  background: aquamarine;
+  padding: 1em;
+  border-color: red;
+  border-radius: 20px;
+  text-align: center;
+  font-family: sans-serif;
+  margin-bottom: 15%;
+}
+
+
+footer{
+  z-index: 1;
+  background-color: black;
+  font-size: 1vw;
+  color: white;
+  text-align: center;
+  
+  padding: 1%;
+  animation-name: example;
+  animation-duration: 5s;
+  margin-top: %;
+}
+
+
+.menu {
+  z-index: 3;
+    width: 2.2rem;
+    height: 2.7rem;
+    background:black;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 6%;
+    left: 3%;
+    font-family: sans-serif;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    transition: left 0.7s;
+}
+
+.checkbox:checked ~ .menu {
+    left: 40%;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.left-panel {
+    width: 40%;
+    height: 100%;
+    background: black;
+    position: absolute;
+    top: 0;
+    left: -40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.4s;
+}
+
+.checkbox:checked ~ .left-panel {
+    left: 0;
+}
+
+.checkbox {
+    display: none;
+    
+}
+
+ul a {
+    color: #F7F7F7;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 0.5rem;
+    margin: 1rem 0;
+}
+
+li:hover {
+    color: white;
+    border: solid white;
+    border-width: 0 0.1rem;
+}
